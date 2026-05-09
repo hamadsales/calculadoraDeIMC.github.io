@@ -14,7 +14,23 @@
             <h2>Digite sua altura</h2>
         </div>
         <div>
-            <input type='number'>
+            <input type='number' id="altura">
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Digite sua idade</h2>
+        </div>
+        <div>
+            <input type='number' id="idade">
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Digite seu peso</h2>
+        </div>
+        <div>
+            <input type='number' id="peso">
         </div>
     </div>
     <div>
@@ -28,8 +44,10 @@
                 <label for="Masculino">Masculino</label>
                 <input type="radio" name="genero" value="Feminino">
                 <label for="Feminino">Feminino</label>
+                <input type="button" onclick="radioSelecionado()" value="enviar">
             </form>
         </div>
+
     </div>
     <script src="script.js"></script>
 </body>
