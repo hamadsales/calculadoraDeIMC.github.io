@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de MMC</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div>
+        <div>
+            <h2>Digite sua altura</h2>
+        </div>
+        <div>
+            <input type='number'>
+        </div>
+    </div>
+    <div>
+        <div>
+            <h2>Selecione seu gênero</h2>
+        </div>
+        <div>
+            <form>
+                <!--Pode escolher somente um name-->
+                <input type="radio" name="genero" value="Masculino">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="genero" value="Feminino">
+                <label for="Feminino">Feminino</label>
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
