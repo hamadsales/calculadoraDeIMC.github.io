@@ -31,7 +31,7 @@ function CalculaIMC() {
         res.innerHTML = `Seu IMC é ${imc}: Obesidade II`
         res.classList.add("vermelho-claro")
     } else if(imc >= 40){
-        res.innerHTML = `Seu IMC é ${imc}: Obesidade III`
+        res.innerHTML = `Seu IMC é ${imc}: Obesidade III, busque ajuda imediatamente`
         res.classList.add("vermelho-forte")
     }
 }
