@@ -9,46 +9,30 @@
 </head>
 
 <body>
-    <div>
-        <div>
+    <main>
+        <h1>Calculadora de IMC</h1>
+        <section>
             <h2>Digite sua altura</h2>
-        </div>
-        <div>
             <input type='number' id="altura">
-        </div>
-    </div>
-    <div>
-        <div>
             <h2>Digite sua idade</h2>
-        </div>
-        <div>
             <input type='number' id="idade">
-        </div>
-    </div>
-    <div>
-        <div>
             <h2>Digite seu peso</h2>
-        </div>
-        <div>
             <input type='number' id="peso">
-        </div>
-    </div>
-    <div>
-        <div>
-            <h2>Selecione seu gênero</h2>
-        </div>
-        <div>
-            <form>
+        </section>
+        <section>
+            <fieldset> <!--Agrupa elementos de um formulário-->
+                <legend>Selecione seu gênero</legend> <!--Título do form-->
                 <!--Pode escolher somente um name-->
                 <input type="radio" name="genero" value="Masculino">
-                <label for="Masculino">Masculino</label>
+                <!--Para o label ligar o texto ao input o 'id' deve ser igual ao 'for'-->
+                <label for="Masculino" id="Masculino">Masculino</label>
                 <input type="radio" name="genero" value="Feminino">
-                <label for="Feminino">Feminino</label>
-                <input type="button" onclick="radioSelecionado()" value="enviar">
-            </form>
-        </div>
-
-    </div>
+                <label for="Feminino" id="Feminino">Feminino</label>
+            </fieldset>
+        </section>
+        <input type="button" onclick="CalculaIMC()" value="Calcular">
+        <section id="res"></section>
+    </main>
     <script src="script.js"></script>
 </body>
 
