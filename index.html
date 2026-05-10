@@ -14,21 +14,8 @@
         <section>
             <h2>Digite sua altura</h2>
             <input type='number' id="altura">
-            <h2>Digite sua idade</h2>
-            <input type='number' id="idade">
             <h2>Digite seu peso</h2>
             <input type='number' id="peso">
-        </section>
-        <section>
-            <fieldset> <!--Agrupa elementos de um formulário-->
-                <legend>Selecione seu gênero</legend> <!--Título do form-->
-                <!--Pode escolher somente um name-->
-                <input type="radio" name="genero" value="Masculino">
-                <!--Para o label ligar o texto ao input o 'id' deve ser igual ao 'for'-->
-                <label for="Masculino" id="Masculino">Masculino</label>
-                <input type="radio" name="genero" value="Feminino">
-                <label for="Feminino" id="Feminino">Feminino</label>
-            </fieldset>
         </section>
         <input type="button" onclick="CalculaIMC()" value="Calcular">
         <section id="res"></section>
