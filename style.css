@@ -1,93 +1,129 @@
-/* Configurações Gerais - Reseta o espaçamento padrão */
+/* Configurações de Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-/* Corpo da página - Fundo e Centralização */
 body {
-    background-color: #f0f2f5; /* Um cinza bem clarinho e moderno */
+    background-color: #f0f2f5;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Garante que ocupe a altura toda da tela */
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Cartão principal (Main) */
+/* Container Principal */
 main {
-    background-color: white;
+    background: white;
     padding: 30px;
-    border-radius: 15px; /* Bordas arredondadas elegantes */
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     width: 350px;
     text-align: center;
 }
 
-/* Títulos */
 h1 {
     color: #333;
+    font-size: 1.6rem;
     margin-bottom: 5px;
-    font-size: 24px;
 }
 
 h3#dataAtual {
-    color: #666;
+    color: #888;
+    font-size: 0.85rem;
     font-weight: normal;
-    font-size: 14px;
     margin-bottom: 25px;
 }
 
+/* Labels e Inputs */
 h2 {
-    color: #444;
-    font-size: 16px;
+    color: #555;
+    font-size: 0.95rem;
+    text-align: left;
     margin-top: 15px;
-    margin-bottom: 8px;
-    text-align: left; /* Alinha o texto da pergunta à esquerda */
+    margin-bottom: 5px;
 }
 
-/* Campos de entrada (Inputs) */
 input[type='number'] {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    outline: none; /* Tira a borda preta ao clicar */
-    transition: border 0.3s;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: 0.3s;
 }
 
 input[type='number']:focus {
-    border: 1px solid #4a90e2; /* Muda a cor da borda ao clicar */
+    border-color: #4a90e2;
+    background-color: #fff;
 }
 
-/* Botão Calcular */
-input[type='button'] {
+/* Botão */
+input[type="button"] {
     width: 100%;
     background-color: #4a90e2;
     color: white;
     border: none;
-    padding: 12px;
+    padding: 14px;
     border-radius: 8px;
-    font-size: 16px;
     font-weight: bold;
+    font-size: 1rem;
     cursor: pointer;
-    margin-top: 25px;
-    transition: background 0.3s;
-}
-
-input[type='button']:hover {
-    background-color: #357abd; /* Escurece um pouco ao passar o mouse */
-}
-
-/* Seção de Resultado */
-section#res {
     margin-top: 20px;
+    transition: 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #357abd;
+}
+
+/* --- SEÇÃO DE RESULTADO (DINÂMICA) --- */
+
+section#res {
+    margin-top: 25px;
+    padding: 0; /* Começa vazio */
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+/* Estilo quando houver qualquer classe de cor */
+#res.verde, #res.amarelo, #res.laranja, #res.vermelho-claro, #res.vermelho-forte {
     padding: 15px;
-    background-color: #eef6ff;
-    border-radius: 8px;
-    color: #2c3e50;
-    font-weight: 500;
-    line-height: 1.5;
+    border: 1px solid transparent;
+}
+
+/* Definição das Cores Pastéis */
+
+#res.verde {
+    background-color: #e8f5e9; /* Verde claro */
+    color: #2e7d32;
+    border-color: #c8e6c9;
+}
+
+#res.amarelo {
+    background-color: #fffde7; /* Amarelado */
+    color: #f57f17;
+    border-color: #fff9c4;
+}
+
+#res.laranja {
+    background-color: #fff3e0; /* Avermelhado leve (Laranja) */
+    color: #e65100;
+    border-color: #ffe0b2;
+}
+
+#res.vermelho-claro {
+    background-color: #ffebee; /* Vermelho claro */
+    color: #c62828;
+    border-color: #ffcdd2;
+}
+
+#res.vermelho-forte {
+    background-color: #ffcdd2; /* Muito Vermelho */
+    color: #b71c1c;
+    border: 2px solid #ef9a9a;
 }
