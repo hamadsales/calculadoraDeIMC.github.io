@@ -1,4 +1,4 @@
-# 🩺 Calculadora de IMC - Saúde & DOM
+# 🩺 Calculadora de IMC
 
 Este projeto é uma ferramenta interativa desenvolvida para calcular o Índice de Massa Corporal (IMC) e fornecer feedback visual instantâneo. O foco principal foi a prática de **manipulação de classes via JavaScript** e a construção de um layout moderno e semântico.
 
